@@ -1,0 +1,107 @@
+@charset"UTF-8";
+@font-face {
+    font-family: teen;
+    src: url('academic.ttf') format("opentype");
+    font-weight: normal;}
+@font-face {
+    font-family: destaque;
+    src: url('Versa-Versa.otf') format("opentype");
+    font-weight: normal;
+}
+
+
+:root{
+    --cor1:#F2F2F2;
+    --cor2:#A6A6A6;
+    --cor3:#595959;
+    --cor4:#262626;
+    --cor5:#0D0D0D;
+
+    --fonte-teen: 'teen';
+    --fonte-destaque:'destaque';
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor2);
+}
+header{
+    font-family: var(--fonte-teen);
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-width: 150px;
+    padding-top: 40px;
+    border-width: 10px;
+    
+
+}
+header > h1{
+    color: var(--cor5);
+    margin-bottom: 10px;
+    font-size: 6em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px var(--cor2);
+
+}
+
+header > p{
+    font-family: var(--fonte-destaque);
+    margin: auto;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 0px var(--cor2);
+    padding-bottom: 20px;
+}
+nav{
+    background-color:var(--cor3);
+    box-shadow: 0px 7px 7px var(--cor4);
+}
+nav > a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    transition-duration: 0.5s;
+    
+}
+main{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    text-align: justify;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 20px;
+}
+main p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+main h2{
+    font-family: var(--fonte-destaque);
+}
+main img.foto{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+footer{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+footer  a{
+    text-decoration: underline;
+    color: var(--cor1);
+    text-align: center;
+
+}
